@@ -2,9 +2,9 @@ import { FiMoon ,FiSun} from 'react-icons/fi';
 import { Link as ScrollLink } from 'react-scroll'
 import { useState , useEffect ,useRef } from 'react';
 const Header = (props) => {
-  const navs = ['home', 'about', 'projects', 'experience', 'contact'];
+  const navs = ['home', 'about','skills', 'projects', 'experience', 'contact'];
   return (
-    <header className='text-md bg-white bg-opacity-40 dark:bg-opacity-40 dark:border-b-slate-700 border-gray-300 border-b dark:text-slate-100 dark:bg-gray-900 backdrop-filter backdrop-blur-lg sticky top-0'>
+    <header className='z-50 text-md bg-white bg-opacity-40 dark:bg-opacity-40 dark:border-b-slate-700 border-gray-300 border-b dark:text-slate-100 dark:bg-darkblack backdrop-filter backdrop-blur-lg sticky top-0'>
       <nav className="md:flex hidden md:justify-between md:py-9 md:items-center md:h-12 md:mx-auto md:w-10/12 2xl:w-4/5">
         <ul>
           <li>

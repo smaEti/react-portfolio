@@ -7,6 +7,9 @@ export default {
   darkMode : 'class',
   theme: {
     extend: {
+      backgroundColor:{
+        'darkblack': '#161019',
+      },
       fontFamily: {
         'Poppins': ['Poppins'],
       },

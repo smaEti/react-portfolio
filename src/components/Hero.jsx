@@ -8,7 +8,7 @@ const Hero = (props) => {
     'Web Development.',
   ];
   return ( 
-    <section id="hero" className="md:h-full  dark:text-slate-100">
+    <section id="hero" className="md:min-h-screen  dark:text-slate-100">
       <div className="md:pt-36 md:pb-40 md:mx-56 flex justify-between ">
         <div>
           <h1 className="text-xl pb-6">

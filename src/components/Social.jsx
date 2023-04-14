@@ -7,7 +7,7 @@ const Social = () => {
     ['twitter', <FaTwitter />],
   ];
   return (
-    <div className="sticky flex flex-col gap-3 w-fit justify-items-start bottom-10 ml-10 z-10">
+    <div className="hidden sticky md:flex flex-col gap-3 w-fit justify-items-start bottom-10 ml-10 z-10">
       {SocialLinks.map((e, i) => (
         <a
           key={i}

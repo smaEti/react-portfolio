@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Social from './components/Social';
 import About from './components/About';
+import Skills from './components/Skills';
 function App() {
   //state for dark mode
   let [darkToggle, setDarkToggle] = useState(false);
@@ -16,7 +17,7 @@ function App() {
       : document.body.classList.remove('dark');
   }, [darkToggle]);
   return (
-      <div id="home"className="dark:bg-gray-900 font-Poppins ">
+      <div id="home"className="dark:bg-darkblack bg-slate-100/50 font-Poppins ">
         <Header
           mode={darkToggle}
           darkToggle={() => {
@@ -25,15 +26,16 @@ function App() {
         />
         <Hero />
         <About />
+        <Skills />
         <Social />
       </div>
   );
 }
 //TODO: components
-//header (kinda done)
-//hero (kinda done)
-//about
-//skills
+//header (kinda done (pc))
+//hero (kinda done (pc))
+//about (kinda done (pc))
+//skills (kinda done (pc))
 //projects
 //expriences / education
 //contact me
