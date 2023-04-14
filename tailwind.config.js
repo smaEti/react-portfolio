@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         'Poppins': ['Poppins'],
       },
+ 
     },
   },
   plugins: [],

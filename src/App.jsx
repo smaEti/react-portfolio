@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Social from './components/Social';
+import About from './components/About';
 function App() {
   //state for dark mode
   let [darkToggle, setDarkToggle] = useState(false);
@@ -11,30 +12,28 @@ function App() {
   useEffect(() => {
     //changing the theme when dark toggle state changes
     darkToggle
-      ? screenRef?.current?.classList.add('dark')
-      : screenRef?.current?.classList.remove('dark');
+      ? document.body.classList.add('dark')
+      : document.body.classList.remove('dark');
   }, [darkToggle]);
   return (
-    <div ref={screenRef}>
-      <div className="bg-gray-100/50 dark:bg-gray-900">
+      <div id="home"className="dark:bg-gray-900 font-Poppins ">
         <Header
           mode={darkToggle}
           darkToggle={() => {
             darkToggle ? setDarkToggle(false) : setDarkToggle(true);
-            console.log('set dark toggle');
           }}
         />
         <Hero />
+        <About />
         <Social />
       </div>
-    </div>
   );
 }
 //TODO: components
 //header (kinda done)
-//hero
+//hero (kinda done)
 //about
-//tech stack
+//skills
 //projects
 //expriences / education
 //contact me

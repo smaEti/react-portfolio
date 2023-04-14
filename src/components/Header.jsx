@@ -3,15 +3,9 @@ import { Link as ScrollLink } from 'react-scroll'
 import { useState , useEffect ,useRef } from 'react';
 const Header = (props) => {
   const navs = ['home', 'about', 'projects', 'experience', 'contact'];
-  const [scroll, setScroll] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50);
-    });//TODO : scroll for border of header
-  }, []);
   return (
-    <header className='text-md dark:text-slate-100 backdrop-filter backdrop-blur-lg dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0'>
-      <nav className="md:flex font-Poppins md:justify-between md:py-9 md:items-center md:h-12 md:mx-auto md:w-10/12 2xl:w-4/5">
+    <header className='text-md bg-white bg-opacity-40 dark:bg-opacity-40 dark:border-b-slate-700 border-gray-300 border-b dark:text-slate-100 dark:bg-gray-900 backdrop-filter backdrop-blur-lg sticky top-0'>
+      <nav className="md:flex hidden md:justify-between md:py-9 md:items-center md:h-12 md:mx-auto md:w-10/12 2xl:w-4/5">
         <ul>
           <li>
             <a href="">LOGO</a>

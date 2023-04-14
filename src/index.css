@@ -6,3 +6,8 @@
     font-family: "Poppins";
     src: url('./assets/fonts/Poppins-Regular.ttf');
 }
+/* #hero :[] { 
+    background-image: url('../public/images/herobgc.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
